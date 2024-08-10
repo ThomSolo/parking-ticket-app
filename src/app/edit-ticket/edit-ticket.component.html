@@ -1,0 +1,14 @@
+<!-- src/app/edit-ticket/edit-ticket.component.html -->
+<form [formGroup]="ticketForm" (ngSubmit)="onSubmit()">
+    <label for="licensePlate">License Plate:</label>
+    <input id="licensePlate" formControlName="licensePlate" />
+  
+    <label for="issueDate">Issue Date:</label>
+    <input id="issueDate" formControlName="issueDate" type="date" />
+  
+    <label for="amount">Amount:</label>
+    <input id="amount" formControlName="amount" type="number" />
+  
+    <button type="submit" [disabled]="ticketForm.invalid">Update Ticket</button>
+  </form>
+  

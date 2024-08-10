@@ -1,0 +1,18 @@
+<!-- src/app/app.component.html -->
+<header>
+  <nav>
+    <a routerLink="/home">Home</a>
+    <a routerLink="/tickets">Tickets</a>
+    <a routerLink="/add-ticket">Add Ticket</a>
+  </nav>
+  <router-outlet></router-outlet>  
+</header>
+
+<main>
+  <!-- The router-outlet directive acts as a placeholder for routed views -->
+  <router-outlet></router-outlet>
+</main>
+
+<footer>
+  <p>&copy; 2024 Parking Ticket App</p>
+</footer>

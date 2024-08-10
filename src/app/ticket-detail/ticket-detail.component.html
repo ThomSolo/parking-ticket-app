@@ -1,0 +1,9 @@
+<!-- src/app/ticket-detail/ticket-detail.component.html -->
+<div *ngIf="ticket">
+    <h2>Ticket Details</h2>
+    <p>License Plate: {{ ticket.licensePlate }}</p>
+    <p>Issue Date: {{ ticket.issueDate }}</p>
+    <p>Amount: ${{ ticket.amount }}</p>
+    <a [routerLink]="['/edit-ticket', ticket.id]">Edit Ticket</a>
+  </div>
+  

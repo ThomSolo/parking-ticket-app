@@ -1,0 +1,9 @@
+<!-- src/app/ticket-list/ticket-list.component.html -->
+<h2>Ticket List</h2>
+<ul>
+  <li *ngFor="let ticket of tickets">
+    {{ ticket.licensePlate }} - {{ ticket.issueDate }} - ${{ ticket.amount }}
+    <button (click)="deleteTicket(ticket.id)">Delete</button>
+  </li>
+</ul>
+<a routerLink="/add-ticket">Add New Ticket</a>
